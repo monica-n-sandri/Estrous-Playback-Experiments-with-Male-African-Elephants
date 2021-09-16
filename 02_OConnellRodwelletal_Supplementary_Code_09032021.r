@@ -22,7 +22,7 @@ library(irr)
 
 # load data
 testosterone <- read_csv("add in data name") 
-# testosterone data not publicly available due to an ongoing hormone study, but can be made available by the corresponding author upon reasonable request.
+# testosterone data are not yet publicly available due to an ongoing hormone study of this population.
 
 # adjusting variable types
 testosterone$ElephantID <- as.factor(as.character(testosterone$ElephantID))
