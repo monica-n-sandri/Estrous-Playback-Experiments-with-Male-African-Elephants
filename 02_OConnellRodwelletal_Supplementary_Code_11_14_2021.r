@@ -50,7 +50,7 @@ TukeyHSD(t.anova)
 ### Data import and preparation ###
 
 # load data
-irr.raters <- read_csv("add in data name") #1.IRR
+irr.raters <- read_csv("add in data name") #1.IRR (convert to .csv file first)
 
 ### Analysis and results ###
 
@@ -85,7 +85,7 @@ TukeyHSD(response_anova)
 ### Data import and preparation ###
 
 # load data
-defecation.rates.1 <- read_csv("insert data set") # 3a.Defecation Rates Score=1 
+defecation.rates.1 <- read_csv("insert data set") # 3a.Defecation Rates Score=1 (convert to .csv file first)
 
 # adjust variable types
 defecation.rates.1$Time <- factor(defecation.rates.1$Time, levels = c("before", "after"))
@@ -117,7 +117,7 @@ def.score1.effect <- wilcox_effsize(RateLog ~ Time,
 ### Data import and preparation ###
 
 # load data
-defecation.rates.less1 <- read_csv("insert data set") # 3b.Defecation Rates Score<1
+defecation.rates.less1 <- read_csv("insert data set") # 3b.Defecation Rates Score<1 (convert to .csv file first)
 
 # adjust variable types
 defecation.rates.less1$Time <- factor(defecation.rates.less1$Time, levels = c("before", "after"))
@@ -151,7 +151,7 @@ def.score.less1.effect <- wilcox_effsize(RateLog ~ Time,
 ### Data import and preparation ###
 
 # load data
-musth.behav.all <- read_csv("insert data set") # 4a.Musth Male Behaviors (for all musth 4Qs, regardless of response score)
+musth.behav.all <- read_csv("insert data set") # 4a.Musth Male Behaviors - for all musth 4Qs, regardless of response score (convert to .csv file first)
 
 # adjust variable types
 musth.behav.all <- factor(musth.behav.all$Time, levels = c("before", "after"))
@@ -184,7 +184,7 @@ musth.all.effect <- wilcox_effsize(RateLog ~ Time,
 ### Data import and preparation ###
 
 # load data
-musth.behav.subgroup <- read_csv("insert data set") # 4b.Musth Male Behaviors Subgroup (one musth 4Q removed with response score of 0.2815)
+musth.behav.subgroup <- read_csv("insert data set") # 4b.Musth Male Behaviors Subgroup - one musth 4Q removed with response score of 0.2815 (convert to .csv file first)
 
 # adjust variable types
 musth.behav.subgroup <- factor(musth.behav.subgroup$Time, levels = c("before", "after"))
