@@ -80,7 +80,7 @@ TukeyHSD(response_anova)
 # significant differences between musth 4Q and non-musth 4Q (p=0.009), and between the non-musth 1Q-3Q group and non-musth 4Q (p=0.012)
 
 
-##### Model 4: Assessing if males of different response intensity increase their rate of defecation after hearing estrus playbacks #####
+##### Model 4: Assessing if males of different response intensity increase their rate of defecation after hearing estrous playbacks #####
 #### Model 4a: Males with a response score = 1 ####
 ### Data import and preparation ###
 
