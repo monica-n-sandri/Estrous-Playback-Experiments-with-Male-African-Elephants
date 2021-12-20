@@ -1,4 +1,4 @@
-#### Hormonal and Age Driven Responses of Male African Ele-phants (Loxodonta africana) to Estrous Call Playbacks Inform Conservation Management Tools ####
+#### Hormonal and Age Driven Responses of Male African Elephants (Loxodonta africana) to Estrous Call Playbacks Inform Conservation Management Tools ####
 #### Authors: Caitlin E. O'Connell-Rodwell, Monica N. Sandri, Jodie L. Berezin, Jaquelyn M. Munevar, Colleen Kinzley, Jason D. Wood, Maggie Wisniewska, and Werner Kilian ####
 #### The scripts below can be used to replicate all statistical modeling and conclusions reported in the manuscript using the appropriate data sets. ####
 #### Questions regarding the data or scripts can be directed to: Monica N. Sandri at monica.n.sandri[at]gmail.com ####
