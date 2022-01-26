@@ -140,7 +140,7 @@ leveneTest(Log_T ~ MaleType, data = testosterone.log) # p-value = 0.1514, so can
 ### Data import and preparation ###
 
 # load data frame
-irr.raters <- read_csv("add in data name") #1.IRR
+irr.raters <- read_csv("add in data name") #1.IRR - Table S1
 
 ### Analysis and results ###
 
@@ -148,8 +148,7 @@ icc(irr.raters, model = "twoway", type = "agreement", unit = "average")
 # ICC = 0.908
 
 
-
-##### Model 4: Linear Regressions - Testing the predictive power of testosterone and male group on response score#####
+##### Model 4: Linear Regressions - Testing the predictive power of testosterone and male group on response score #####
 ### Data import and preparation ###
 
 # load data frame
@@ -227,12 +226,11 @@ anova(simple_reg_nooutlier, additive_model)
 # additive model significantly better at explaining variation in response score (p = 0.0085)
 
 
-
 ##### Model 5: Assessing differences in response score across three male elephant groups #####
 ### Data import and preparation ###
 
 # load data frame
-response.scores <- read_csv("add in data name") #2. Response Scores (convert to .csv file first)
+response.scores <- read_csv("add in data name") #2. Response Scores - Table S2
 
 # adjust variable types
 response.scores$MaleType <- as.factor(as.character(response.scores$MaleType))
@@ -273,7 +271,6 @@ hist(residuals(model_RS)) # somewhat irregular
 # Compute Shapiro-Wilk test of normality
 shapiro_test(residuals(model_RS)) # p-value = 0.1419, so we can assume normal distribution of the residuals
 
-
 ## Check for homogeneity of variance
 
 plot(model_RS, 1) # appears unbiased and homoscedastic
@@ -284,7 +281,7 @@ leveneTest(ResponseScore ~ MaleType, data = response.scores) # p-value = 0.6093,
 ### Data import and preparation ###
 
 # load data frame
-defecation.rates <- read_csv("add in data name") # 3.Defecation Rates of n = 18 males
+defecation.rates <- read_csv("add in data name") # 3.Defecation Rates of n = 18 males - Table S3
 
 # adjust variable types
 defecation.rates$Time <- factor(defecation.rates$Time, levels = c("before", "after"))
@@ -336,7 +333,7 @@ def.outliers <- defecation.rates %>%
 ### Data import and preparation ###
 
 # load data frame
-musth.behav.all <- read_csv("insert data set") # 4a.Musth Male Behaviors (for all musth 4Qs, regardless of response score)
+musth.behav.all <- read_csv("insert data set") # 4.Musth Male Behaviors (for all musth 4Qs, regardless of response score)
 
 # adjust variable types
 musth.behav.all <- factor(musth.behav.all$Time, levels = c("before", "after"))
@@ -389,7 +386,7 @@ musth.rate.outliers <- musth.behav.all %>%
 ### Data import and preparation ###
 
 # load data frame
-musth.behav.subgroup <- read_csv("add in file name") # 4b.Musth Male Behaviors Subgroup
+musth.behav.subgroup <- read_csv("add in file name") # 5.Musth Male Behaviors Subgroup
 
 # adjust variable types
 musth.behav.subgroup <- factor(musth.behav.subgroup$Time, levels = c("before", "after"))
